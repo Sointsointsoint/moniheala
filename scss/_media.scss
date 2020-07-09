@@ -1,0 +1,138 @@
+@media (max-width: 1440px) {
+  .header {
+    margin-left: 0;
+    margin-right: 0;
+    .container {
+      max-width: 1440px;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .doctor__card-btn {
+    flex: 0 1 100%;
+  }
+  .doctor__card-btn-detal {
+    margin-top: 5px;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    margin-bottom: 60px;
+  }
+  .header__container{ 
+    flex-wrap: wrap;
+  }
+  .header__lang {
+    display: none;
+  }
+  .header__form {
+    flex: 0 1 100%;
+    order: 1;
+    margin: 10px 0 0 0;
+  }
+  .main__bg {
+    min-height: 384px;
+  }
+  .main__text {
+    margin-left: 20px;
+    font-size: 18px;
+  }
+  .main__subtitle {
+    font-size: 12px;
+    padding-top: 10px;
+  }
+  .main__logo {
+    top: -40px;
+    img {
+      max-width: 82px;
+      min-height: 82px;
+    }
+  }
+  .info {
+    margin-bottom: 20px;
+  }
+  .info__wrapper {
+    margin-left: 0;
+    flex-wrap: wrap;
+  }
+  .info__left {
+    margin-bottom: 10px;
+  }
+  .info__btns {
+    margin-left: auto;
+  }
+  .doctors-slider .doctor__card {
+  }
+  .doctors-slider {
+    .slick-dots {
+      li {
+        button {
+          width: 15px;
+          height: 15px;
+        }
+      }
+      li.slick-active {
+        width: 15px;
+        height: 15px  ;
+        button {
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          background-color: #000;
+        }
+      }
+    }
+  }
+  .doctors {
+    margin-bottom: 100px;
+  }
+  .footer__company,
+  .footer__contacts {
+    flex: 0 1 50%;
+  }
+  .footer__mailing {
+    max-width: 90%;
+    flex: 0 1 100%;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 525px) {
+  .footer__bottom-right__list {
+    padding-left: 0;
+  }
+  .footer__bottom-right__item + .footer__bottom-right__item{
+    margin-left: 0;
+  }
+  .footer__bottom-right__item {
+    display: block;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 425px) {
+  .main-popup {
+    display: none;
+  }
+  #modal {
+    max-width: 325px;
+  }
+  .info__left {
+    flex-wrap: wrap;
+  }
+  .info__item {
+    flex: 0 1 45%;
+  }
+  .info__star,
+  .info__response {
+    order: 1;
+    margin: 5px auto 0 0;
+  }
+  .info__star {
+    padding: 0 0 0 21px;
+    &:before {
+      left: 0;
+    }
+  }
+}
+@media (max-width: 425px) {
+
+}

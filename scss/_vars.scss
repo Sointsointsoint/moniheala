@@ -1,0 +1,22 @@
+$blue1: #16395b;
+$blue: #0943bf; 
+$green: #00d793;
+@mixin regular{
+  font-family: 'Avenir Next Cyr-Regular';
+  font-weight: 400;
+}
+@mixin medium {
+  font-family: 'Avenir Next Cyr-Medium';
+  font-weight: 500;
+}
+@mixin bold{
+  font-family: 'Avenir Next Cyr-Bold';
+  font-weight: 700;
+}
+@mixin demi {
+  font-family: 'AvenirNextCyr-Demi';
+  font-weight: 400;
+}
+@mixin ico {
+  font-family: 'icomoon' !important;
+}

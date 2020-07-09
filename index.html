@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Благомед</title>
+  <link rel="shortcut-icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__container">
+        <a href="#" class="header__logo">
+          <picture>
+            <source srcset="images/mob-logo.png" media="(max-width: 768px)">
+            <img src="images/logo.png" alt="logo">
+          </picture>
+        </a>
+        </picture>
+
+        <div class="header__form">
+          <form>
+            <input type="text" placeholder="Знайти фахівця">
+            <button class="header__form-btn" type="submit"></button>
+          </form>
+        </div>
+        <div class="header__right">
+          <div class="header__lang">
+            <div class="header__lang_active">
+              <span>Українська</span>
+            </div>
+            <div class="header__lang_hidden">
+              <a href="#">Російська</a>
+            </div>
+          </div>
+          <a data-fancybox data-options='{"src": "#modal", "touch": false, "smallBtn" : true}' href="javascript:;"
+            class="btn btn-primary header__log">Увійти
+          </a>
+          <button class="header__btn">Меню</button>
+          <div class="header__burger">
+            <span></span>
+          </div>
+          <div class="header__menu">
+            <div class="header__burger">
+              <span></span>
+            </div>
+            <nav class="header__menu-list">
+              <a href="#" class="header__menu-link">Онлайн-консультація</a>
+              <a href="#" class="header__menu-link">Лікарі</a>
+              <a href="#" class="header__menu-link">Аптека</a>
+              <a href="#" class="header__menu-link">Послуги</a>
+              <a href="#" class="header__menu-link">Графік прийому лікарів</a>
+              </ul>
+            </nav>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- LOGIN  -->
+
+  <div style="display: none;" id="modal">
+    <div class="wrapper">
+      <div class="tabs">
+        <span class="tab active" data-id="1">Авторизація</span>
+        <span class="tab" data-id="2">Реєстрація</span>
+      </div>
+      <div class="tab_content">
+        <div class="tab-item active-tab" id="1">
+          <div class="modal__title">
+            Авторизація
+          </div>
+          <div class="modal__links-box">
+            <a href="#" class="modal__link modal__link-tele"></a>
+            <a href="#" class="modal__link modal__link-facebook"></a>
+          </div>
+          <span>або</span>
+          <div class="modal__form">
+            <form>
+              <div class="modal__form-input">
+                <input class="modal__login" type="text" placeholder="Логін" required>
+              </div>
+              <div class="modal__form-input modal__form-input-password">
+                <input class="modal__password" type="password" placeholder="Пароль" required>
+              </div>
+              <div class="modal__form-checkbox">
+                <label>
+                  <input class="checkbox" type="checkbox">
+                  <span class="checked"></span>
+                  <span class="modal__form-checkbox-text">Запам'ятати мене</span>
+                </label>
+              </div>
+            </form>
+            <div class="modal__form-btns-box">
+              <button class="login">Авторизація</button>
+              <button class="password">Забули пароль?</button>
+            </div>
+          </div>
+          <p class="modal__rules">
+            Авторизовуючись через соціальні мережі, Ви погоджуєтесь з
+            <a href="#">правилами користування сайтом</a> та з
+            <a href="#">правилами обробки персональних даних</a>.
+          </p>
+        </div>
+        <div class="tab-item" id="2">
+          <div class="registration">
+            <form class="registration__form">
+              <div class="registration__input">
+                <input type="text" placeholder="П.І.Б" required>
+              </div>
+              <div class="registration__input">
+                <input type="text" placeholder="Нікнейм" required>
+              </div>
+              <div class="registration__input">
+                <input type="email" placeholder="Email" required>
+              </div>
+              <div class="registration__input">
+                <input type="password" required placeholder="Пароль">
+              </div>
+              <div class="registration__input">
+                <input type="password" required placeholder="Повторіть пароль">
+              </div>
+              <button type="submit">
+                Зареєструватись
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LOGIN  END -->
+
+  <section class="main">
+    <div class="container">
+      <div class="main__bg" style="background-image: url(images/content/main-content.jpg);">
+        <div class="main__logo">
+          <img src="images/content/main_logo.png" alt="main-logo">
+        </div>
+        <div class="main__wrapper">
+          <div class="main__text">
+            Медичний, оздоровчий центр «Благомед»
+            <span class="main__subtitle">
+              Медичний центр
+            </span>
+          </div>
+          <div class="main-popup">
+            <div class="main-popup__btn"></div>
+            <div class="main-popup__item">
+              <div class="main-popup__title">
+                Адреса:
+              </div>
+              <div class="main-popup__subtitle">
+                пр. Відродження, 13, Луцьк,
+                Волинська область, Україна, 43000
+              </div>
+            </div>
+            <div class="main-popup__item">
+              <div class="main-popup__title">
+                Контакти:
+              </div>
+              <a href="tel:38099999999" class="main-popup__tel">+38 (099) 999-99-99</a>
+              <a href="tel:380332770809" class="main-popup__tel">+38 (0332) 77-08-09</a>
+            </div>
+            <div class="main-popup__graphic">
+              <div class="main-popup__title">
+                Графік роботи: <span>Зараз працює</span>
+              </div>
+              <div class="main-popup__graphic-inner">
+                <ul>
+                  <li>понеділок</li>
+                  <li>вівторок</li>
+                  <li class="active">середа</li>
+                  <li>четвер</li>
+                  <li>п’ятниця</li>
+                  <li>субота</li>
+                </ul>
+                <ul>
+                  <li>09:00-20:00</li>
+                  <li>09:00-20:00</li>
+                  <li class="active">09:00-20:00</li>
+                  <li>09:00-20:00</li>
+                  <li>09:00-20:00</li>
+                  <li>09:00-20:00</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="info">
+    <div class="container">
+      <div class="info__wrapper">
+        <div class="info__left">
+          <div class="info__star info__item">
+            <span>5,0</span>
+          </div>
+          <div class="info__response info__item">
+            <span>953</span>
+            <a href="№">Відгуків</a>
+          </div>
+          <div class="info__doctors info__item">
+            <span>120</span>
+            Лікарів
+          </div>
+          <div class="info__services info__item">
+            <span>340</span>
+            Послуг
+          </div>
+        </div>
+        <div class="info__btns">
+          <button class="info__btn info__btn_01" type="submit" style="display: none;">Я тут не працюю</button>
+          <button class="info__btn info__btn_02" type="submit">Про клініку</button>
+          <button class="info__btn info__btn_03" type="submit">Фото</button>
+          <button class="info__btn info__btn_04" type="submit"></button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="doctors">
+    <div class="container">
+      <div class="doctors__inner">
+        <div class="doctors__title">
+          Лікарі
+        </div>
+        <div class="doctors__subtitle">
+          Всі лікарі
+        </div>
+      </div>
+      <div class="card__slider">
+        <div class="card__column">
+          <div class="card__item card__item_01">
+            <div class="card__subtitle">
+              <div class="card__subtitle-items">
+                <div class="card__subtitle-item rating"><span>4.9</span>Рейтинг</div>
+                <div class="card__subtitle-item comments"><span>123</span>Відгуків</div>
+                <div class="card__subtitle-item service"><span>24</span>Послуг</div>
+              </div>
+              <div class="card__subtitle-avatar card__subtitle-avatar_offline">
+                <img src="images/content/avatar1.jpg" alt="#">
+                <span>Не доступний</span>
+              </div>
+
+            </div>
+            <div class="card__name">
+              Лозовий Юрій Володимирович
+            </div>
+            <div class="card__profesion">
+              Інфекціонист, Лікар-нарколог дільничий, Інфекціонист, Лікар-нарколог
+            </div>
+            <div class="card__map">
+              м. Луцьк, пр. Соборності 89
+              <span>Луцька міська клінічна лікарня</span>
+            </div>
+            <div class="card__price">
+              <div class="card__price-title">
+                Послуги та ціни:
+              </div>
+              <div class="card__price-item">
+                <div class="card__price-item-name">
+                  Консультація
+                </div>
+                <span>- від 100 грн</span>
+              </div>
+              <div class="card__price-item">
+                <div class="card__price-item-name">
+                  Сеанс терапії
+                </div>
+                <span>- від 100 грн</span>
+              </div>
+              <div class="card__price-btns">
+                <button class="button_send">
+                  Написати
+                </button>
+                <button class="button_info">
+                  Детальніше
+                </button>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="card__column">
+          <div class="card__item card__item_02">
+            <div class="card__subtitle">
+              <div class="card__subtitle-items">
+                <div class="card__subtitle-item rating"><span>4.9</span>Рейтинг</div>
+                <div class="card__subtitle-item comments"><span>123</span>Відгуків</div>
+                <div class="card__subtitle-item service"><span>24</span>Послуг</div>
+              </div>
+              <div class="card__subtitle-avatar card__subtitle-avatar_online">
+                <img src="images/content/avatar2.jpg" alt="#">
+                <span>Доступний</span>
+              </div>
+
+            </div>
+            <div class="card__name">
+              Лозовий Юрій Володимирович
+            </div>
+            <div class="card__profesion">
+              Інфекціонист, Лікар-нарколог дільничий
+            </div>
+            <div class="card__map">
+              м. Луцьк, пр. Соборності 89
+              <span>Луцька міська клінічна лікарня</span>
+            </div>
+            <div class="card__price">
+              <div class="card__price-title">
+                Послуги та ціни:
+              </div>
+              <div class="card__price-item">
+                <div class="card__price-item-name">
+                  Консультація
+                </div>
+                <span>- від 100 грн</span>
+              </div>
+              <div class="card__price-item">
+                <div class="card__price-item-name">
+                  Сеанс терапії
+                </div>
+                <span>- від 100 грн</span>
+              </div>
+              <div class="card__price-btns">
+                <button class="button_send">
+                  Написати
+                </button>
+                <button class="button_info">
+                  Детальніше
+                </button>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="card__column">
+          <div class="card__item card__item_03">
+            <div class="card__subtitle">
+              <div class="card__subtitle-items">
+                <div class="card__subtitle-item rating"><span>4.9</span>Рейтинг</div>
+                <div class="card__subtitle-item comments"><span>123</span>Відгуків</div>
+                <div class="card__subtitle-item service"><span>24</span>Послуг</div>
+              </div>
+              <div class="card__subtitle-avatar card__subtitle-avatar_online">
+                <img src="images/content/avatar3.jpg" alt="#">
+                <span>Не доступний</span>
+              </div>
+
+            </div>
+            <div class="card__name">
+              Лозовий Юрій Володимирович
+            </div>
+            <div class="card__profesion">
+              Інфекціонист, Лікар-нарколог дільничий
+            </div>
+            <div class="card__map">
+              м. Луцьк, пр. Соборності 89
+              <span>Луцька міська клінічна лікарня</span>
+            </div>
+            <div class="card__price">
+              <div class="card__price-title">
+                Послуги та ціни:
+              </div>
+              <div class="card__price-item">
+                <div class="card__price-item-name">
+                  Консультація
+                </div>
+                <span>- від 100 грн</span>
+              </div>
+              <div class="card__price-item">
+                <div class="card__price-item-name">
+                  Сеанс терапії
+                </div>
+                <span>- від 100 грн</span>
+              </div>
+              <div class="card__price-btns">
+                <button class="button_send">
+                  Написати
+                </button>
+                <button class="button_info">
+                  Детальніше
+                </button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card__column">
+          <div class="card__item card__item_04">
+            <div class="card__subtitle">
+              <div class="card__subtitle-items">
+                <div class="card__subtitle-item rating"><span>4.9</span>Рейтинг</div>
+                <div class="card__subtitle-item comments"><span>123</span>Відгуків</div>
+                <div class="card__subtitle-item service"><span>24</span>Послуг</div>
+              </div>
+              <div class="card__subtitle-avatar card__subtitle-avatar_offline">
+                <img src="images/content/avatar4.jpg" alt="#">
+                <span>Не доступний</span>
+              </div>
+
+            </div>
+            <div class="card__name">
+              Лозовий Юрій Володимирович
+            </div>
+            <div class="card__profesion">
+              Інфекціонист, Лікар-нарколог
+              дільничий, Лікар-інфекціоніст
+              дитячий, Лікар-хірург дитячий
+            </div>
+            <div class="card__map">
+              м. Луцьк, пр. Соборності 89
+              <span>Луцька міська клінічна лікарня</span>
+            </div>
+            <div class="card__price">
+              <div class="card__price-title">
+                Послуги та ціни:
+              </div>
+              <div class="card__price-item">
+                <div class="card__price-item-name">
+                  Консультація
+                </div>
+                <span>- від 100 грн</span>
+              </div>
+              <div class="card__price-item">
+                <div class="card__price-item-name">
+                  Сеанс терапії
+                </div>
+                <span>- від 100 грн</span>
+              </div>
+              <div class="card__price-btns">
+                <button class="button_send">
+                  Написати
+                </button>
+                <button class="button_info">
+                  Детальніше
+                </button>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="card__column">
+          <div class="card__item card__item_01">
+            <div class="card__subtitle">
+              <div class="card__subtitle-items">
+                <div class="card__subtitle-item rating"><span>4.9</span>Рейтинг</div>
+                <div class="card__subtitle-item comments"><span>123</span>Відгуків</div>
+                <div class="card__subtitle-item service"><span>24</span>Послуг</div>
+              </div>
+              <div class="card__subtitle-avatar card__subtitle-avatar_offline">
+                <img src="images/content/avatar1.jpg" alt="#">
+                <span>Не доступний</span>
+              </div>
+
+            </div>
+            <div class="card__name">
+              Лозовий Юрій Володимирович
+            </div>
+            <div class="card__profesion">
+              Інфекціонист, Лікар-нарколог дільничий, Інфекціонист, Лікар-нарколог
+            </div>
+            <div class="card__map">
+              м. Луцьк, пр. Соборності 89
+              <span>Луцька міська клінічна лікарня</span>
+            </div>
+            <div class="card__price">
+              <div class="card__price-title">
+                Послуги та ціни:
+              </div>
+              <div class="card__price-item">
+                <div class="card__price-item-name">
+                  Консультація
+                </div>
+                <span>- від 100 грн</span>
+              </div>
+              <div class="card__price-item">
+                <div class="card__price-item-name">
+                  Сеанс терапії
+                </div>
+                <span>- від 100 грн</span>
+              </div>
+              <div class="card__price-btns">
+                <button class="button_send">
+                  Написати
+                </button>
+                <button class="button_info">
+                  Детальніше
+                </button>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="card__column">
+          <div class="card__item card__item_02">
+            <div class="card__subtitle">
+              <div class="card__subtitle-items">
+                <div class="card__subtitle-item rating"><span>4.9</span>Рейтинг</div>
+                <div class="card__subtitle-item comments"><span>123</span>Відгуків</div>
+                <div class="card__subtitle-item service"><span>24</span>Послуг</div>
+              </div>
+              <div class="card__subtitle-avatar card__subtitle-avatar_online">
+                <img src="images/content/avatar2.jpg" alt="#">
+                <span>Доступний</span>
+              </div>
+
+            </div>
+            <div class="card__name">
+              Лозовий Юрій Володимирович
+            </div>
+            <div class="card__profesion">
+              Інфекціонист, Лікар-нарколог дільничий
+            </div>
+            <div class="card__map">
+              м. Луцьк, пр. Соборності 89
+              <span>Луцька міська клінічна лікарня</span>
+            </div>
+            <div class="card__price">
+              <div class="card__price-title">
+                Послуги та ціни:
+              </div>
+              <div class="card__price-item">
+                <div class="card__price-item-name">
+                  Консультація
+                </div>
+                <span>- від 100 грн</span>
+              </div>
+              <div class="card__price-item">
+                <div class="card__price-item-name">
+                  Сеанс терапії
+                </div>
+                <span>- від 100 грн</span>
+              </div>
+              <div class="card__price-btns">
+                <button class="button_send">
+                  Написати
+                </button>
+                <button class="button_info">
+                  Детальніше
+                </button>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="card__column">
+          <div class="card__item card__item_03">
+            <div class="card__subtitle">
+              <div class="card__subtitle-items">
+                <div class="card__subtitle-item rating"><span>4.9</span>Рейтинг</div>
+                <div class="card__subtitle-item comments"><span>123</span>Відгуків</div>
+                <div class="card__subtitle-item service"><span>24</span>Послуг</div>
+              </div>
+              <div class="card__subtitle-avatar card__subtitle-avatar_online">
+                <img src="images/content/avatar3.jpg" alt="#">
+                <span>Не доступний</span>
+              </div>
+
+            </div>
+            <div class="card__name">
+              Лозовий Юрій Володимирович
+            </div>
+            <div class="card__profesion">
+              Інфекціонист, Лікар-нарколог дільничий
+            </div>
+            <div class="card__map">
+              м. Луцьк, пр. Соборності 89
+              <span>Луцька міська клінічна лікарня</span>
+            </div>
+            <div class="card__price">
+              <div class="card__price-title">
+                Послуги та ціни:
+              </div>
+              <div class="card__price-item">
+                <div class="card__price-item-name">
+                  Консультація
+                </div>
+                <span>- від 100 грн</span>
+              </div>
+              <div class="card__price-item">
+                <div class="card__price-item-name">
+                  Сеанс терапії
+                </div>
+                <span>- від 100 грн</span>
+              </div>
+              <div class="card__price-btns">
+                <button class="button_send">
+                  Написати
+                </button>
+                <button class="button_info">
+                  Детальніше
+                </button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card__column">
+          <div class="card__item card__item_04">
+            <div class="card__subtitle">
+              <div class="card__subtitle-items">
+                <div class="card__subtitle-item rating"><span>4.9</span>Рейтинг</div>
+                <div class="card__subtitle-item comments"><span>123</span>Відгуків</div>
+                <div class="card__subtitle-item service"><span>24</span>Послуг</div>
+              </div>
+              <div class="card__subtitle-avatar card__subtitle-avatar_offline">
+                <img src="images/content/avatar4.jpg" alt="#">
+                <span>Не доступний</span>
+              </div>
+
+            </div>
+            <div class="card__name">
+              Лозовий Юрій Володимирович
+            </div>
+            <div class="card__profesion">
+              Інфекціонист, Лікар-нарколог
+              дільничий, Лікар-інфекціоніст
+              дитячий, Лікар-хірург дитячий
+            </div>
+            <div class="card__map">
+              м. Луцьк, пр. Соборності 89
+              <span>Луцька міська клінічна лікарня</span>
+            </div>
+            <div class="card__price">
+              <div class="card__price-title">
+                Послуги та ціни:
+              </div>
+              <div class="card__price-item">
+                <div class="card__price-item-name">
+                  Консультація
+                </div>
+                <span>- від 100 грн</span>
+              </div>
+              <div class="card__price-item">
+                <div class="card__price-item-name">
+                  Сеанс терапії
+                </div>
+                <span>- від 100 грн</span>
+              </div>
+              <div class="card__price-btns">
+                <button class="button_send">
+                  Написати
+                </button>
+                <button class="button_info">
+                  Детальніше
+                </button>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="card__column">
+          <div class="card__item card__item_01">
+            <div class="card__subtitle">
+              <div class="card__subtitle-items">
+                <div class="card__subtitle-item rating"><span>4.9</span>Рейтинг</div>
+                <div class="card__subtitle-item comments"><span>123</span>Відгуків</div>
+                <div class="card__subtitle-item service"><span>24</span>Послуг</div>
+              </div>
+              <div class="card__subtitle-avatar card__subtitle-avatar_offline">
+                <img src="images/content/avatar1.jpg" alt="#">
+                <span>Не доступний</span>
+              </div>
+
+            </div>
+            <div class="card__name">
+              Лозовий Юрій Володимирович
+            </div>
+            <div class="card__profesion">
+              Інфекціонист, Лікар-нарколог дільничий, Інфекціонист, Лікар-нарколог
+            </div>
+            <div class="card__map">
+              м. Луцьк, пр. Соборності 89
+              <span>Луцька міська клінічна лікарня</span>
+            </div>
+            <div class="card__price">
+              <div class="card__price-title">
+                Послуги та ціни:
+              </div>
+              <div class="card__price-item">
+                <div class="card__price-item-name">
+                  Консультація
+                </div>
+                <span>- від 100 грн</span>
+              </div>
+              <div class="card__price-item">
+                <div class="card__price-item-name">
+                  Сеанс терапії
+                </div>
+                <span>- від 100 грн</span>
+              </div>
+              <div class="card__price-btns">
+                <button class="button_send">
+                  Написати
+                </button>
+                <button class="button_info">
+                  Детальніше
+                </button>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="card__column">
+          <div class="card__item card__item_02">
+            <div class="card__subtitle">
+              <div class="card__subtitle-items">
+                <div class="card__subtitle-item rating"><span>4.9</span>Рейтинг</div>
+                <div class="card__subtitle-item comments"><span>123</span>Відгуків</div>
+                <div class="card__subtitle-item service"><span>24</span>Послуг</div>
+              </div>
+              <div class="card__subtitle-avatar card__subtitle-avatar_online">
+                <img src="images/content/avatar2.jpg" alt="#">
+                <span>Доступний</span>
+              </div>
+
+            </div>
+            <div class="card__name">
+              Лозовий Юрій Володимирович
+            </div>
+            <div class="card__profesion">
+              Інфекціонист, Лікар-нарколог дільничий
+            </div>
+            <div class="card__map">
+              м. Луцьк, пр. Соборності 89
+              <span>Луцька міська клінічна лікарня</span>
+            </div>
+            <div class="card__price">
+              <div class="card__price-title">
+                Послуги та ціни:
+              </div>
+              <div class="card__price-item">
+                <div class="card__price-item-name">
+                  Консультація
+                </div>
+                <span>- від 100 грн</span>
+              </div>
+              <div class="card__price-item">
+                <div class="card__price-item-name">
+                  Сеанс терапії
+                </div>
+                <span>- від 100 грн</span>
+              </div>
+              <div class="card__price-btns">
+                <button class="button_send">
+                  Написати
+                </button>
+                <button class="button_info">
+                  Детальніше
+                </button>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="card__column">
+          <div class="card__item card__item_03">
+            <div class="card__subtitle">
+              <div class="card__subtitle-items">
+                <div class="card__subtitle-item rating"><span>4.9</span>Рейтинг</div>
+                <div class="card__subtitle-item comments"><span>123</span>Відгуків</div>
+                <div class="card__subtitle-item service"><span>24</span>Послуг</div>
+              </div>
+              <div class="card__subtitle-avatar card__subtitle-avatar_online">
+                <img src="images/content/avatar3.jpg" alt="#">
+                <span>Не доступний</span>
+              </div>
+
+            </div>
+            <div class="card__name">
+              Лозовий Юрій Володимирович
+            </div>
+            <div class="card__profesion">
+              Інфекціонист, Лікар-нарколог дільничий
+            </div>
+            <div class="card__map">
+              м. Луцьк, пр. Соборності 89
+              <span>Луцька міська клінічна лікарня</span>
+            </div>
+            <div class="card__price">
+              <div class="card__price-title">
+                Послуги та ціни:
+              </div>
+              <div class="card__price-item">
+                <div class="card__price-item-name">
+                  Консультація
+                </div>
+                <span>- від 100 грн</span>
+              </div>
+              <div class="card__price-item">
+                <div class="card__price-item-name">
+                  Сеанс терапії
+                </div>
+                <span>- від 100 грн</span>
+              </div>
+              <div class="card__price-btns">
+                <button class="button_send">
+                  Написати
+                </button>
+                <button class="button_info">
+                  Детальніше
+                </button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card__column">
+          <div class="card__item card__item_04">
+            <div class="card__subtitle">
+              <div class="card__subtitle-items">
+                <div class="card__subtitle-item rating"><span>4.9</span>Рейтинг</div>
+                <div class="card__subtitle-item comments"><span>123</span>Відгуків</div>
+                <div class="card__subtitle-item service"><span>24</span>Послуг</div>
+              </div>
+              <div class="card__subtitle-avatar card__subtitle-avatar_offline">
+                <img src="images/content/avatar4.jpg" alt="#">
+                <span>Не доступний</span>
+              </div>
+
+            </div>
+            <div class="card__name">
+              Лозовий Юрій Володимирович
+            </div>
+            <div class="card__profesion">
+              Інфекціонист, Лікар-нарколог
+              дільничий, Лікар-інфекціоніст
+              дитячий, Лікар-хірург дитячий
+            </div>
+            <div class="card__map">
+              м. Луцьк, пр. Соборності 89
+              <span>Луцька міська клінічна лікарня</span>
+            </div>
+            <div class="card__price">
+              <div class="card__price-title">
+                Послуги та ціни:
+              </div>
+              <div class="card__price-item">
+                <div class="card__price-item-name">
+                  Консультація
+                </div>
+                <span>- від 100 грн</span>
+              </div>
+              <div class="card__price-item">
+                <div class="card__price-item-name">
+                  Сеанс терапії
+                </div>
+                <span>- від 100 грн</span>
+              </div>
+              <div class="card__price-btns">
+                <button class="button_send">
+                  Написати
+                </button>
+                <button class="button_info">
+                  Детальніше
+                </button>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="card__column">
+          <div class="card__item card__item_01">
+            <div class="card__subtitle">
+              <div class="card__subtitle-items">
+                <div class="card__subtitle-item rating"><span>4.9</span>Рейтинг</div>
+                <div class="card__subtitle-item comments"><span>123</span>Відгуків</div>
+                <div class="card__subtitle-item service"><span>24</span>Послуг</div>
+              </div>
+              <div class="card__subtitle-avatar card__subtitle-avatar_offline">
+                <img src="images/content/avatar1.jpg" alt="#">
+                <span>Не доступний</span>
+              </div>
+
+            </div>
+            <div class="card__name">
+              Лозовий Юрій Володимирович
+            </div>
+            <div class="card__profesion">
+              Інфекціонист, Лікар-нарколог дільничий, Інфекціонист, Лікар-нарколог
+            </div>
+            <div class="card__map">
+              м. Луцьк, пр. Соборності 89
+              <span>Луцька міська клінічна лікарня</span>
+            </div>
+            <div class="card__price">
+              <div class="card__price-title">
+                Послуги та ціни:
+              </div>
+              <div class="card__price-item">
+                <div class="card__price-item-name">
+                  Консультація
+                </div>
+                <span>- від 100 грн</span>
+              </div>
+              <div class="card__price-item">
+                <div class="card__price-item-name">
+                  Сеанс терапії
+                </div>
+                <span>- від 100 грн</span>
+              </div>
+              <div class="card__price-btns">
+                <button class="button_send">
+                  Написати
+                </button>
+                <button class="button_info">
+                  Детальніше
+                </button>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="card__column">
+          <div class="card__item card__item_02">
+            <div class="card__subtitle">
+              <div class="card__subtitle-items">
+                <div class="card__subtitle-item rating"><span>4.9</span>Рейтинг</div>
+                <div class="card__subtitle-item comments"><span>123</span>Відгуків</div>
+                <div class="card__subtitle-item service"><span>24</span>Послуг</div>
+              </div>
+              <div class="card__subtitle-avatar card__subtitle-avatar_online">
+                <img src="images/content/avatar2.jpg" alt="#">
+                <span>Доступний</span>
+              </div>
+
+            </div>
+            <div class="card__name">
+              Лозовий Юрій Володимирович
+            </div>
+            <div class="card__profesion">
+              Інфекціонист, Лікар-нарколог дільничий
+            </div>
+            <div class="card__map">
+              м. Луцьк, пр. Соборності 89
+              <span>Луцька міська клінічна лікарня</span>
+            </div>
+            <div class="card__price">
+              <div class="card__price-title">
+                Послуги та ціни:
+              </div>
+              <div class="card__price-item">
+                <div class="card__price-item-name">
+                  Консультація
+                </div>
+                <span>- від 100 грн</span>
+              </div>
+              <div class="card__price-item">
+                <div class="card__price-item-name">
+                  Сеанс терапії
+                </div>
+                <span>- від 100 грн</span>
+              </div>
+              <div class="card__price-btns">
+                <button class="button_send">
+                  Написати
+                </button>
+                <button class="button_info">
+                  Детальніше
+                </button>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="card__column">
+          <div class="card__item card__item_03">
+            <div class="card__subtitle">
+              <div class="card__subtitle-items">
+                <div class="card__subtitle-item rating"><span>4.9</span>Рейтинг</div>
+                <div class="card__subtitle-item comments"><span>123</span>Відгуків</div>
+                <div class="card__subtitle-item service"><span>24</span>Послуг</div>
+              </div>
+              <div class="card__subtitle-avatar card__subtitle-avatar_online">
+                <img src="images/content/avatar3.jpg" alt="#">
+                <span>Не доступний</span>
+              </div>
+
+            </div>
+            <div class="card__name">
+              Лозовий Юрій Володимирович
+            </div>
+            <div class="card__profesion">
+              Інфекціонист, Лікар-нарколог дільничий
+            </div>
+            <div class="card__map">
+              м. Луцьк, пр. Соборності 89
+              <span>Луцька міська клінічна лікарня</span>
+            </div>
+            <div class="card__price">
+              <div class="card__price-title">
+                Послуги та ціни:
+              </div>
+              <div class="card__price-item">
+                <div class="card__price-item-name">
+                  Консультація
+                </div>
+                <span>- від 100 грн</span>
+              </div>
+              <div class="card__price-item">
+                <div class="card__price-item-name">
+                  Сеанс терапії
+                </div>
+                <span>- від 100 грн</span>
+              </div>
+              <div class="card__price-btns">
+                <button class="button_send">
+                  Написати
+                </button>
+                <button class="button_info">
+                  Детальніше
+                </button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card__column">
+          <div class="card__item card__item_04">
+            <div class="card__subtitle">
+              <div class="card__subtitle-items">
+                <div class="card__subtitle-item rating"><span>4.9</span>Рейтинг</div>
+                <div class="card__subtitle-item comments"><span>123</span>Відгуків</div>
+                <div class="card__subtitle-item service"><span>24</span>Послуг</div>
+              </div>
+              <div class="card__subtitle-avatar card__subtitle-avatar_offline">
+                <img src="images/content/avatar4.jpg" alt="#">
+                <span>Не доступний</span>
+              </div>
+
+            </div>
+            <div class="card__name">
+              Лозовий Юрій Володимирович
+            </div>
+            <div class="card__profesion">
+              Інфекціонист, Лікар-нарколог
+              дільничий, Лікар-інфекціоніст
+              дитячий, Лікар-хірург дитячий
+            </div>
+            <div class="card__map">
+              м. Луцьк, пр. Соборності 89
+              <span>Луцька міська клінічна лікарня</span>
+            </div>
+            <div class="card__price">
+              <div class="card__price-title">
+                Послуги та ціни:
+              </div>
+              <div class="card__price-item">
+                <div class="card__price-item-name">
+                  Консультація
+                </div>
+                <span>- від 100 грн</span>
+              </div>
+              <div class="card__price-item">
+                <div class="card__price-item-name">
+                  Сеанс терапії
+                </div>
+                <span>- від 100 грн</span>
+              </div>
+              <div class="card__price-btns">
+                <button class="button_send">
+                  Написати
+                </button>
+                <button class="button_info">
+                  Детальніше
+                </button>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__company footer__item">
+          <div class="footer__company-title footer-title">
+            Компанія
+          </div>
+          <ul class="footer__company-list">
+            <li><a href="#">Про Нас</a></li>
+            <li><a href="#">Новини</a></li>
+            <li><a href="#">Довідковий центр</a></li>
+          </ul>
+        </div>
+        <div class="footer__contacts footer__item">
+          <div class="footer__contacts-title footer-title">
+            Контакти
+          </div>
+          <a href="mailto:moehealthmapsapi@gmail.com" class="footer__contacts-mail">
+            moehealthmapsapi@gmail.com
+          </a>
+          <div class="footer__contacts-social">
+            <a href="#" class="footer__contacts-link facebook social-link"></a>
+            <a href="#" class="footer__contacts-link instagram social-link"></a>
+            <a href="#" class="footer__contacts-link telegram social-link"></a>
+          </div>
+        </div>
+        <div class="footer__mailing footer__item">
+          <div class="footer__contacts-title footer-title">
+            Підписатися на розсилку
+          </div>
+          <form class="footer__mailing-form">
+            <input type="email" placeholder="Введіть вашу пошту" required>
+            <button></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__bottom-left">
+          2019 <a href="#" class="footer__bottom-left__link">MoniHeal.</a> Medical Online Information System
+        </div>
+        <div class="footer__bottom-right">
+          <ul class="footer__bottom-right__list">
+            <li class="footer__bottom-right__item">
+              <a href="#" class="footer__bottom-right__link">Захист даних</a>
+            </li>
+            <li class="footer__bottom-right__item">
+              <a href="#" class="footer__bottom-right__link">Політика
+                приватності</a>
+            </li>
+            <li class="footer__bottom-right__item">
+              <a href="#" class="footer__bottom-right__link">Правила користування</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
