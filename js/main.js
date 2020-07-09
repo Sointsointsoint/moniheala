@@ -15,6 +15,13 @@ $(document).ready(function () {
   });
 
 
+  $(document).on('click', '.card__item_01', function () {
+    if ($('.card__item_01').hasClass('selected')) {
+      $('.card__item_01').removeClass('selected');
+    } else {
+      $('.card__item_01').addClass('selected');
+    }
+  });
   $(document).on('click', '.card__item_02', function () {
     if ($('.card__item_02').hasClass('selected')) {
       $('.card__item_02').removeClass('selected');
