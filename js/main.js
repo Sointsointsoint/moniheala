@@ -1,5 +1,13 @@
 $(document).ready(function () {
 
+  $(document).on('click', '.card__item', function () {
+    if ($(this).hasClass('selected')) {
+      $(this).removeClass('selected');
+    } else {
+      $(this).addClass('selected');
+    }
+  });
+
   $(".main-popup__btn").click(function () {
     $(".main-popup__graphic").slideToggle();
     $(".main-popup__btn").toggleClass('rotate')
@@ -13,37 +21,6 @@ $(document).ready(function () {
   $(".header__burger").click(function () {
     $(".header__menu").toggleClass('header__menu_active');
   });
-
-
-  $(document).on('click', '.card__item_01', function () {
-    if ($('.card__item_01').hasClass('selected')) {
-      $('.card__item_01').removeClass('selected');
-    } else {
-      $('.card__item_01').addClass('selected');
-    }
-  });
-  $(document).on('click', '.card__item_02', function () {
-    if ($('.card__item_02').hasClass('selected')) {
-      $('.card__item_02').removeClass('selected');
-    } else {
-      $('.card__item_02').addClass('selected');
-    }
-  });
-  $(document).on('click', '.card__item_03', function () {
-    if ($('.card__item_03').hasClass('selected')) {
-      $('.card__item_03').removeClass('selected');
-    } else {
-      $('.card__item_03').addClass('selected');
-    }
-  });
-  $(document).on('click', '.card__item_04', function () {
-    if ($('.card__item_04').hasClass('selected')) {
-      $('.card__item_04').removeClass('selected');
-    } else {
-      $('.card__item_04').addClass('selected');
-    }
-  });
-
 
   $('.wrapper .tab').on('click', function (event) {
     var id = $(this).attr('data-id');
@@ -74,7 +51,6 @@ $(document).ready(function () {
       {
         breakpoint: 769,
         settings: {
-          dots: false,
           slidesToShow: 2,
           slidesToScroll: 2,
         }
@@ -82,7 +58,7 @@ $(document).ready(function () {
       {
         breakpoint: 600,
         settings: {
-          dots: false,
+          arrows: false,
           slidesToShow: 1,
           slidesToScroll: 1,
         }
@@ -90,7 +66,7 @@ $(document).ready(function () {
       {
         breakpoint: 426,
         settings: {
-          dots: false,
+          arrows: false,
           slidesToShow: 1,
           slidesToScroll: 1,
         }
